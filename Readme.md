@@ -2,6 +2,7 @@
 
 ####编译动态库  
 
+安装gcc编译器 ```apt insatll gcc -y```
 执行下面代码生成动态库  
 ```
 gcc -shared -fPIC -o libvpntc.so vpntc.c
@@ -19,7 +20,7 @@ gcc -shared -fPIC -o libvpntc.so vpntc.c
 125		1Gbps
 ```
 ####加载插件  
-把上面的文件复制到 /etc/openvpn  
+将动态库和限速配置文件复制到 /etc/openvpn  
 在OpenVpn配置文件中添加 
 ```plugin "/etc/openvpn/libvpntc.so"```   
 
