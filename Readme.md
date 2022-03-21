@@ -2,9 +2,13 @@
 
 ####编译动态库  
 
-安装gcc编译器 ```apt insatll gcc -y```  
-安装完成执行下面代码生成动态库  
+克隆仓库到本地  
 ```
+git clone https://gitee.com/abinx/vpntc.git
+```
+安装gcc编译器生成动态库  
+```
+apt insatll gcc -y
 gcc -shared -fPIC -o libvpntc.so vpntc.c
 ```
 
