@@ -3,7 +3,7 @@
 ####编译动态库  
 
 安装gcc编译器 ```apt insatll gcc -y```  
-执行下面代码生成动态库  
+安装完成执行下面代码生成动态库  
 ```
 gcc -shared -fPIC -o libvpntc.so vpntc.c
 ```
