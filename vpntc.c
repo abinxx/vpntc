@@ -1,14 +1,15 @@
-/**
-	OpenVPN用户流量限速插件
-	
-	@使用方法
-	1.编译生成动态库 libvpntc.so
-	2.编写限速配置文件命名 vpntc.conf
-	3.把上面的文件复制到 /etc/openvpn
-	4.配置文件中添加 plugin "/etc/openvpn/libvpntc.so"
-	
-	By 阿斌	2022年3月17日	QQ: 1797106720
-**/
+/*
+ *	OpenVPN用户流量限速插件
+ *
+ *	@使用方法
+ *	1.编译生成动态库 libvpntc.so
+ *	2.编写限速配置文件命名 vpntc.conf
+ *	3.把上面的文件复制到 /etc/openvpn
+ *	4.配置文件中添加 plugin "/etc/openvpn/libvpntc.so"
+ *
+ *	By 阿斌	2022年3月17日	QQ: 1797106720 
+ */
+ 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
